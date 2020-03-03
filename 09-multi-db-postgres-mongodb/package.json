@@ -1,0 +1,21 @@
+{
+  "name": "07-multi-db",
+  "version": "1.0.0",
+  "description": "docker ps - vejo o que está rodando",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha src/tests/*.test.js",
+    "test:watch": "npx mocha src/tests/*.test.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
