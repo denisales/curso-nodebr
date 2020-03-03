@@ -4,13 +4,13 @@
 //     mongo -u denisales -p denisales --authenticationDatabase herois
 
 // databases
-show dbs
+// show dbs
 
 // mudando o contexto para uma database
-use herois
+// use herois
 
 // mostrar tables (colecoes)
-show collections
+// show collections
 
 
 db.herois.insert({
