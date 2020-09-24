@@ -1,5 +1,29 @@
 docker ps - vejo o que está rodando
 
+# ---- MYSQL
+docker run \
+    --name mysql \
+    -e MYSQL_DATABASE=provisor_goodyearblog \
+    -e MYSQL_ROOT_PASSWORD=denisales \
+    -e MYSQL_USER=denis \
+    -e MYSQL_PASSWORD=denis \
+    -p 3306:3306 \
+    -d \
+    mysql
+
+docker run \
+    --name adminer-mysql \
+    -p 8080:8080 \
+    --link mysql:mysql \
+    -d \
+    adminer
+
+
+# mysql -u root -p 
+# ALTER USER 'root'@'localhost' IDENTIFIED BY 'denisales!';
+# ALTER USER 'denis' IDENTIFIED WITH mysql_native_password BY 'denis'
+
+
 
 # ----- POSTGRES
 docker run \
